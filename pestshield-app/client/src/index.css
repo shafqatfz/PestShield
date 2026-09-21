@@ -1,0 +1,39 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, Segoe UI, Roboto, sans-serif; background: #f5f7f4; color: #1f2a1f; }
+
+.navbar { display: flex; justify-content: space-between; align-items: center; padding: 14px 24px; background: #2f6d3e; color: white; }
+.navbar .brand { color: white; text-decoration: none; font-weight: 700; font-size: 1.2rem; }
+.navbar .nav-links a, .navbar .nav-links button { color: white; text-decoration: none; margin-left: 18px; background: none; border: none; cursor: pointer; font-size: 1rem; }
+
+.page, .form-page { max-width: 640px; margin: 32px auto; padding: 0 16px; }
+.form-page form { display: flex; flex-direction: column; gap: 10px; }
+.form-page input, .form-page select, .form-page textarea { padding: 10px; border: 1px solid #ccc; border-radius: 6px; font-size: 1rem; }
+.form-page button { padding: 10px; border: none; border-radius: 6px; background: #2f6d3e; color: white; font-size: 1rem; cursor: pointer; }
+.form-page label { font-size: 0.85rem; font-weight: 600; margin-top: 6px; }
+.error { color: #b3261e; }
+
+.card { background: white; padding: 16px; border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); margin-bottom: 16px; }
+.quick-links { display: flex; gap: 12px; flex-wrap: wrap; }
+.btn { padding: 10px 16px; background: #2f6d3e; color: white; border-radius: 6px; text-decoration: none; }
+
+.timeline-item { border-left: 3px solid #2f6d3e; padding: 8px 16px; margin-bottom: 10px; }
+
+.preview { max-width: 200px; border-radius: 8px; margin-top: 8px; }
+
+.ai-box { padding: 10px 12px; border-radius: 8px; font-size: 0.92rem; margin-top: 4px; }
+.ai-loading { background: #eef1ee; color: #555; }
+.ai-confident { background: #e6f4ea; color: #1a5c2c; border: 1px solid #b7ddc0; }
+.ai-unsure { background: #fdf3e0; color: #8a5a00; border: 1px solid #f0d9a6; }
+.ai-unavailable { background: #f0f0f0; color: #666; }
+.ai-note { font-size: 0.8rem; opacity: 0.85; margin-top: 4px; }
+.detection-badge { font-size: 0.85rem; color: #444; }
+.report-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+.report-card { background: white; padding: 12px; border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+.report-card img { width: 100%; height: 140px; object-fit: cover; border-radius: 6px; }
+.status.verified { color: #1a7f37; font-weight: 600; }
+.status.rejected { color: #b3261e; font-weight: 600; }
+.status.pending { color: #a06b00; font-weight: 600; }
+.actions { display: flex; gap: 8px; margin-top: 8px; }
+.actions button { flex: 1; padding: 8px; border: none; border-radius: 6px; cursor: pointer; }
+.actions button:first-child { background: #1a7f37; color: white; }
+.actions button:last-child { background: #b3261e; color: white; }
